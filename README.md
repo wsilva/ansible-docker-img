@@ -5,16 +5,16 @@ Ansible image based on alpine Linux
 # Install
 
 ~~~bash
-echo "alias ansible='docker run -ti --rm --entrypoint ansible --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-config='docker run -ti --rm --entrypoint ansible-config --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-connection='docker run -ti --rm --entrypoint ansible-connection --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-console='docker run -ti --rm --entrypoint ansible-console  --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-doc='docker run -ti --rm --entrypoint ansible-doc  --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-galaxy='docker run -ti --rm --entrypoint ansible-galaxy  --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-inventory='docker run -ti --rm --entrypoint ansible-inventory  --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-playbook='docker run -ti --rm --entrypoint ansible-playbook  --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-pull='docker run -ti --rm --entrypoint ansible-pull  --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
-echo "alias ansible-vault='docker run -ti --rm --entrypoint ansible-vault  --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible='docker run -ti --rm --entrypoint ansible --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-config='docker run -ti --rm --entrypoint ansible-config --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-connection='docker run -ti --rm --entrypoint ansible-connection --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-console='docker run -ti --rm --entrypoint ansible-console --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-doc='docker run -ti --rm --entrypoint ansible-doc --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-galaxy='docker run -ti --rm --entrypoint ansible-galaxy --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-inventory='docker run -ti --rm --entrypoint ansible-inventory --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-playbook='docker run -ti --rm --entrypoint ansible-playbook --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-pull='docker run -ti --rm --entrypoint ansible-pull --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
+echo "alias ansible-vault='docker run -ti --rm --entrypoint ansible-vault --volume \"$HOME/.aws\":/root/.aws --volume $PWD:/app wfsilva/ansible'" | tee -a ~/.bash_profile
 source ~/.bash_profile
 ~~~
 
